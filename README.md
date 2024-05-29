@@ -73,4 +73,8 @@ python3.10 queue_msg_send.py
 
 ## Delete Message
 
+```shell
+python3.10 queue_msg_delete.py
+```
+
 (fin)
