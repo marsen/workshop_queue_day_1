@@ -67,6 +67,10 @@ python3.10 queue_msg_send.py
 
 ## Read Message
 
+```shell
+ python3.10 queue_msg_read.py
+```
+
 ## Delete Message
 
 (fin)
