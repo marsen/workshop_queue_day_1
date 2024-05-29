@@ -30,14 +30,12 @@ RequestId:95423a02-0003-0052-2d8d-b1f4c6000000
 Time:2024-05-29 06:00:52+00:00  
 ErrorCode:QueueAlreadyExists  
 
-
 這個錯誤訊息表示你正在嘗試創建的隊列已經存在。在 Azure Storage 中，每個隊列的名稱必須是唯一的。
 
 解決這個問題的方法有兩種：
 
 如果你想使用一個已經存在的隊列，你可以直接使用它，而不需要再創建一個新的隊列。
 如果你想創建一個新的隊列，你需要使用一個不同的名稱。
-
 
 #### 隊列正在被刪除
 
@@ -61,5 +59,14 @@ Time:2024-05-29T06:04:11.1975422Z</Message></Error>
 
 你可以選擇最適合你的方法來解決這個問題。
 
+## Send Message
+
+```shell
+python3.10 queue_msg_send.py
+```
+
+## Read Message
+
+## Delete Message
 
 (fin)
