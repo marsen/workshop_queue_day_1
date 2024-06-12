@@ -96,7 +96,7 @@ python3 queue_msg_send.py
 ### Delete Message
 
 ```shell
-python3. queue_msg_delete.py
+python3 queue_msg_delete.py
 ```
 
 (fin)
