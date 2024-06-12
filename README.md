@@ -1,5 +1,9 @@
 # LEARNING AZURE QUEUE
 
+## Prerequire
+
+Create a Storage Account on Azure ,and setup the .env files with Connection string
+
 ## SETUP
 
 python3.10 -m pip install python-dotenv
