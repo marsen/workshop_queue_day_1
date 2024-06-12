@@ -2,29 +2,43 @@
 
 ## Prerequire
 
-Create a Storage Account on Azure ,and setup the .env files with Connection string
+- Install python and pip, and setup the virtual env
+- Create a Storage Account on Azure ,and setup the .env files with Connection string
 
-## SETUP
+### Run Commands before workshop
+  
+```terminal
+pip install --upgrade pip    
+```
 
-python3.10 -m pip install python-dotenv
+### Setup virtual environment
+
+```terminal
+python3 -m venv .venv 
+source .venv/bin/activate            
+```
+
+### install python-dotenv
+
+python3 -m pip install python-dotenv
 
 ## Create Connection  
 
 ```shell
-python3.10 queue_conn.py
+python3 queue_conn.py
 ```
 
 ```shell
-python3.10 queue_conn_2.py
+python3 queue_conn_2.py
 ```
 
 ## Create Queue
 
 ```shell
-python3.10 queue_create.py  
+python3 queue_create.py  
 ```
 
-### Exception
+### Exception We've met
 
 #### 嘗試創建的隊列已經存在
 
@@ -66,19 +80,19 @@ Time:2024-05-29T06:04:11.1975422Z</Message></Error>
 ## Send Message
 
 ```shell
-python3.10 queue_msg_send.py
+python3 queue_msg_send.py
 ```
 
 ## Read Message
 
 ```shell
- python3.10 queue_msg_read.py
+ python3 queue_msg_read.py
 ```
 
 ## Delete Message
 
 ```shell
-python3.10 queue_msg_delete.py
+python3. queue_msg_delete.py
 ```
 
 (fin)

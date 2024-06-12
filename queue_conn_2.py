@@ -1,14 +1,16 @@
-from azure.storage.queue import QueueClient 
+from azure.identity import DefaultAzureCredential
+from azure.storage.queue import QueueClient
 from dotenv import load_dotenv
 import os
-
-# load env
+ 
 load_dotenv()
 
-queue_name = os.getenv("QUEUE_NAME") 
+queue_name = os.getenv("QUEUE_NAME")
 
-connect_str = os.getenv("CONNECTION_STRING")
+account_url = os.getenv("ACCOUNT_URL")
 
+default_credential = DefaultAzureCredential()
+ 
 # 建立連線
 
-queue_client = QueueClient.from_connection_string(connect_str, queue_name)
+queue_client = QueueClient(account_url, queue_name=queue_name ,credential=default_credential)
